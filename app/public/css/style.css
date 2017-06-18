@@ -34,10 +34,24 @@ nav.navbar.navbar-default {
   justify-content: space-between;
 }
 
+div.reposition-nav {
+  display: flex;
+  align-items: center;
+}
+
+div.nav-icons {
+  position: fixed;
+  /*bottom: 0;*/
+  right: 0;
+  /*display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;*/
+}
+
 .btn.btn-default {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 1.5em;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1em;
   font-family: cursive;
   padding: 8px 10px;
 }
