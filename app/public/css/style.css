@@ -7,9 +7,15 @@ a {
   color: #00B7FF;
 }
 
+section div.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* TOP SECTION */
 
-section img {
+mark img {
   height: 200px;
   width: auto;
 }
@@ -17,8 +23,9 @@ section img {
 /* NAV */
 
 nav.navbar.navbar-default {
+  z-index: 100;
   margin-bottom: 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -27,9 +34,12 @@ nav.navbar.navbar-default {
   justify-content: space-between;
 }
 
-a.btn.btn-default {
+.btn.btn-default {
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 1.5em;
+  font-family: cursive;
+  padding: 8px 10px;
 }
 
 a.navbar-brand img {
@@ -37,7 +47,12 @@ a.navbar-brand img {
   width: auto;
 }
 
-section {
+#down-arrow {
+  height: 30px;
+  width: auto;
+}
+
+mark {
   height: 500px;
   width: auto;
   display: flex;
@@ -45,12 +60,13 @@ section {
   justify-content: center;
 
   background-image: url('images/logo-last-test.png');
+  background-color: transparent;
   background-size: cover;
-  -webkit-animation: fadein 6s; /* Safari and Chrome */
-  -moz-animation: fadein 6s; /* Firefox */
-  -ms-animation: fadein 6s; /* Internet Explorer */
-  -o-animation: fadein 6s; /* Opera */
-  animation: fadein 6s;
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -moz-animation: fadein 5s; /* Firefox */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera */
+  animation: fadein 5s;
 }
 
 @keyframes fadein {
@@ -81,3 +97,36 @@ section {
     from { opacity: 0; }
     to   { opacity: 1; }
 }​
+
+/* PROJECTS */
+
+section.projects  div img {
+  position: absolute;
+  bottom: -100px;
+}
+
+.mockup-img {
+  height: 400px;
+  width: auto;
+  margin: 20px 10px;
+}
+
+.mockup-logo {
+  height: 80px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* EDUCATION */
+
+section.education.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.education div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

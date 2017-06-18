@@ -6,14 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Justin Hart's Personal Site</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <base href="/">
+    <!-- <base href="/"> -->
   </head>
   <body>
-    <section>
-      <img src="images/logo-last-test.png" alt="logo">
-    </section>
+    <mark><img src="images/logo.png" alt="logo"></mark>
+
+    <hr>
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -24,16 +25,123 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="reposition-nav">
-            <a class="btn btn-default" href="#">About</a>
+            <!-- <a class="btn btn-default" href="#">About</a>
             <a class="btn btn-default" href="#">Resume</a>
-            <a class="btn btn-default" href="#">Contact</a>
+            <a class="btn btn-default" href="#">Contact</a> -->
+            <a href='#projects'><span id="nav-text">the stuff to know is down below</span></a>
           </div>
         </div>
       </div>
+      <br><br>
     </nav>
 
+    <section class="projects">
+      <div class="section-header">
+        <h1 id="projects">PROJECTS</h1>
+      </div>
+      <hr>
+      <div class="mycro row">
+        <div class="col-lg-5">
+          <h2><span><img class="mockup-logo" src="images/mycro-logo.jpg" alt="logo"></span>MicroLens</h2>
+          <br>
+          <h6>CSS, HTML, Javascript, jQuery, JSON</h6>
+          <br>
+          <p>This extension loads a custom home page populated with recent and trending news, a note pad, the current date and outside temperature, and access to a calculator, random joke generator and a meme generator.</p>
+          <br>
+          <span>View Live</span>&nbsp;&nbsp;&nbsp;
+          <span>View Github</span>&nbsp;&nbsp;&nbsp;
+          <span>View Video</span>
+        </div>
+        <div class="col-lg-7">
+          <img class="mockup-img" src="images/mycro-screenshot.png" alt="mycro">
+        </div>
+      </div>
+
+      <hr>
+      <br><br>
+
+      <div class="shook row">
+        <div class="col-lg-7">
+          <img class="mockup-img" src="images/shook.png" alt="shook">
+        </div>
+        <div class="col-lg-5">
+          <h2><span><img class="mockup-logo" src="images/shook-icon-2.png" alt="logo"></span>SHOOK</h2>
+          <br>
+          <h6>Javascript, Node, Express, PostgreSQL, AWS, CSS, Bootstrap, Handlebars, HTML, Knex</h6>
+          <br>
+          <p>SHOOK is a social betting app that turns life's everyday events into bet-able moments and ensures neither party has a “conveniently” poor memory when the bet comes due. You can challenge friends directly on the website or on Twitter using #SHOOK and the Shook-bot will take care of the rest.</p>
+          <br>
+          <span>View Live</span>&nbsp;&nbsp;&nbsp;
+          <span>View Github</span>&nbsp;&nbsp;&nbsp;
+          <span>View Video</span>
+        </div>
+      </div>
+
+      <hr>
+      <br><br>
+
+      <div class="hq row">
+        <div class="col-lg-5">
+          <h2><span><img class="mockup-logo" src="images/hq-logo.png" alt="logo"></span>Headquarters</h2>
+          <br>
+          <h6>CSS, HTML, Javascript, jQuery, JSON</h6>
+          <br>
+          <p>This Google Chrome extension loads a custom home page populated with recent and trending news, a note pad, the current date and outside temperature, and access to a calculator, random joke generator and a meme generator.</p>
+          <br>
+          <span>View Live</span>&nbsp;&nbsp;&nbsp;
+          <span>View Github</span>&nbsp;&nbsp;&nbsp;
+          <span>View Video</span>
+        </div>
+        <div class="col-lg-7">
+          <img class="mockup-img" src="images/hq.jpg" alt="hq">
+        </div>
+      </div>
+
+      <hr>
+      <br><br>
+
+    </section>
+
+    <section class="education row">
+      <div class="section-header">
+        <h1 id="education">EDUCATION</h1>
+      </div>
+      <hr>
+      <div class="col-lg-4">
+        <img src="images/galvanize" alt="logo">
+        <h4>Galvanize, Denver</h4>
+        <h6>2017</h6>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/capm" alt="logo">
+        <h4>CAPM Certification</h4>
+        <h6>2014</h6>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/cu" alt="logo">
+        <h4>University of Colorado, Boulder</h4>
+        <h6>2012</h6>
+      </div>
+    </section>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <hr>
+
+    <section class="experience row">
+      <div class="section-header">
+        <h1 id="experience">EXPERIENCE</h1>
+      </div>
+      <hr>
+    </section>
+
+  <!-- Libraries -->
+  <script src="vendor/jquery.min.js"></script>
+
+  <!--  Scripts -->
+  <script type="text/javascript" src="js/eventListeners.js"></script>
   </body>
 </html>
