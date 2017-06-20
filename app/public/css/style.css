@@ -25,13 +25,28 @@ mark img {
 nav.navbar.navbar-default {
   z-index: 100;
   margin-bottom: 0;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#nav-text {
+  color: white;
+}
+
+#message {
+  color: white;
+  position: absolute;
+  bottom: 90px;
+}
+
+div#message-block {
+  display: flex;
+  justify-content: center;
 }
 
 div.reposition-nav {
@@ -41,11 +56,14 @@ div.reposition-nav {
 
 div.nav-icons {
   position: fixed;
-  /*bottom: 0;*/
   right: 0;
-  /*display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;*/
+}
+
+img.icon-block {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 6px;
 }
 
 .btn.btn-default {
@@ -138,9 +156,16 @@ section.education.row {
   margin-bottom: 20px;
 }
 
-.education div {
+.education div, .experience div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.education-logos {
+  height: 100px;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
