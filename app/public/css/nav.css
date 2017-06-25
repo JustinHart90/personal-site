@@ -1,0 +1,101 @@
+nav.navbar.navbar-default {
+  z-index: 100;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-text {
+  color: white;
+}
+
+#name {
+  position: absolute;
+  font-family: cursive;
+  font-size: 1.5em;
+  bottom: 185px;
+  color: rgb(175, 88, 89)
+}
+
+#role {
+  position: absolute;
+  font-family: cursive;
+  font-size: 1.5em;
+  bottom: 150px;
+  color: rgb(175, 88, 89)
+}
+
+#message {
+  color: white;
+  position: absolute;
+  bottom: 90px;
+}
+
+div#message-block {
+  display: flex;
+  justify-content: center;
+}
+
+div.reposition-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+div.nav-icons {
+  position: fixed;
+  right: 0;
+}
+
+.flex-direction img.icon-block {
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+img.icon-block {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+img.icon-block.blank {
+  margin-right: -15px;
+}
+
+#resume-label {
+  color: rgb(105,162,215);
+  position: fixed;
+  margin-top: 12.5px;
+  margin-left: 10px;
+  /*z-index: 10002;*/
+}
+
+div.nav-icons.flex-direction {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+a.navbar-brand img {
+  height: 150%;
+  width: auto;
+}
+
+#down-arrow {
+  height: 30px;
+  width: auto;
+}

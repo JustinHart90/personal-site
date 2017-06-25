@@ -58,13 +58,19 @@ $(document).ready(function() {
 
   // flex-direction for icon block
   $(document).scroll( () => {
-    getValue() !== 0 ?
-      $("div.nav-icons").addClass('flex-direction') :
-      $("div.nav-icons").removeClass('flex-direction')
+    // console.log("Get Max:", getMax());
+    console.log("Get Value:", getValue());
+    // getValue() !== 0 ?
+    //   $("div.nav-icons").addClass('flex-direction') :
+    //   $("div.nav-icons").removeClass('flex-direction')
+
+    if (getValue() > 195) {
+      $("#resume-label, #resume-container").addClass('hide')
+      $("div.nav-icons").addClass('flex-direction')
+    }
 
     if (getValue() !== 0) {
-      $("progress").addClass('showBorder');
-      $("#resume-label, #resume-container").addClass('hide')
+      // $("progress").addClass('showBorder');
     }
 
     if (getValue() > projects - 40) {
@@ -78,7 +84,8 @@ $(document).ready(function() {
     }
     if (getValue() === 0) {
       $("div.progress-links a").removeClass('bold')
-      $("#resume-label, #resume-container").removeClass('hide')
+      $("div.nav-icons").removeClass('flex-direction')
+      // $("#resume-label, #resume-container").removeClass('hide')
     }
   })
 });
