@@ -64,19 +64,21 @@ $(document).ready(function() {
 
     if (getValue() !== 0) {
       $("progress").addClass('showBorder');
+      $("#resume-label, #resume-container").addClass('hide')
     }
 
     if (getValue() > projects - 40) {
-      $("div.progress-links a.first.hide").removeClass('hide')
+      $("div.progress-links a.projects-link").addClass('bold')
     }
     if (getValue() > education - 40) {
-      $("div.progress-links a.second.hide").removeClass('hide')
+      $("div.progress-links a.education-link").addClass('bold')
     }
     if (getValue() > education + 40) {
-      $("div.progress-links a.third.hide").removeClass('hide')
+      $("div.progress-links a.experience-link").addClass('bold')
     }
     if (getValue() === 0) {
-      $("div.progress-links a").addClass('hide')
+      $("div.progress-links a").removeClass('bold')
+      $("#resume-label, #resume-container").removeClass('hide')
     }
   })
 });

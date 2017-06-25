@@ -40,26 +40,35 @@ progress.showBorder {
   border: 1px solid white;
 }
 
-div.progress-links a {
+div.progress-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   z-index: 10001;
   position: fixed;
-  top: 5px;
-  margin-left: 40px;
-  font-family: sans-serif;
+  left: 0;
+  top: 17px;
 }
 
-div.progress-links a.first {
+div.progress-links a {
+  /*margin-left: 40px;
+  font-family: sans-serif;*/
+  color: rgb(55, 90, 127)
+}
+
+div.progress-links a.projects-link {
   left: 20%;
 }
 
-div.progress-links a.second {
+div.progress-links a.education-link {
   left: 50%;
 }
 
-div.progress-links a.third {
+div.progress-links a.experience-link {
   right: 0;
 }
 
-div.progress-links a.hide {
-  display: none;
+div.progress-links a.bold {
+  font-weight: bold;
 }

@@ -13,7 +13,7 @@ section div.section-header {
   align-items: center;
 }
 
-/* TOP SECTION */
+/* LOGO */
 
 mark img {
   height: 200px;
@@ -68,6 +68,11 @@ div#message-block {
 div.reposition-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
 }
 
 div.nav-icons {
@@ -89,6 +94,17 @@ img.icon-block {
   border-radius: 6px;
 }
 
+img.icon-block.blank {
+  margin-right: -15px;
+}
+
+#resume-label {
+  color: rgb(105,162,215);
+  position: fixed;
+  margin-top: 12.5px;
+  margin-left: 10px;
+  /*z-index: 10002;*/
+}
 
 div.nav-icons.flex-direction {
   display: flex;
@@ -96,14 +112,6 @@ div.nav-icons.flex-direction {
   position: fixed;
   right: 0;
   bottom: 0;
-}
-
-.btn.btn-default {
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 1em;
-  font-family: cursive;
-  padding: 8px 10px;
 }
 
 a.navbar-brand img {
@@ -116,16 +124,20 @@ a.navbar-brand img {
   width: auto;
 }
 
-mark {
+mark.parallax {
   height: 500px;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-image: url('images/logo-last-test.png');
+  /*background-image: url('images/logo.png');*/
   background-color: transparent;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+
   -webkit-animation: fadein 5s; /* Safari and Chrome */
   -moz-animation: fadein 5s; /* Firefox */
   -ms-animation: fadein 5s; /* Internet Explorer */
