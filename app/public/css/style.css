@@ -38,6 +38,22 @@ nav.navbar.navbar-default {
   color: white;
 }
 
+#name {
+  position: absolute;
+  font-family: cursive;
+  font-size: 1.5em;
+  bottom: 185px;
+  color: rgb(175, 88, 89)
+}
+
+#role {
+  position: absolute;
+  font-family: cursive;
+  font-size: 1.5em;
+  bottom: 150px;
+  color: rgb(175, 88, 89)
+}
+
 #message {
   color: white;
   position: absolute;
@@ -59,11 +75,27 @@ div.nav-icons {
   right: 0;
 }
 
+.flex-direction img.icon-block {
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
 img.icon-block {
   height: 40px;
   width: auto;
   margin-right: 10px;
   border-radius: 6px;
+}
+
+
+div.nav-icons.flex-direction {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 .btn.btn-default {
@@ -141,6 +173,7 @@ section.projects  div img {
   height: 400px;
   width: auto;
   margin: 20px 10px;
+  border-radius: 4px;
 }
 
 .mockup-logo {
@@ -168,4 +201,5 @@ section.education.row {
   width: auto;
   margin-bottom: 20px;
   margin-top: 50px;
+  border-radius: 5px;
 }

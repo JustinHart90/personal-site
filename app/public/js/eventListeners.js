@@ -12,6 +12,8 @@ $(document).ready( () => {
     e.preventDefault();
     scrollTo("#nav-link");
   })
+  // $('.ui.labeled.icon.sidebar')
+  // .sidebar('toggle');
 })
 
 function scrollTo(hash) {

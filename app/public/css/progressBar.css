@@ -1,0 +1,65 @@
+progress {
+  /* Positioning */
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: 50px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: rgb(175, 88, 89);
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(175, 88, 89);
+}
+
+progress::-moz-progress-bar {
+  background-color: rgb(175, 88, 89);
+}
+
+progress.showBorder {
+  border: 1px solid white;
+}
+
+div.progress-links a {
+  z-index: 10001;
+  position: fixed;
+  top: 5px;
+  margin-left: 40px;
+  font-family: sans-serif;
+}
+
+div.progress-links a.first {
+  left: 20%;
+}
+
+div.progress-links a.second {
+  left: 50%;
+}
+
+div.progress-links a.third {
+  right: 0;
+}
+
+div.progress-links a.hide {
+  display: none;
+}

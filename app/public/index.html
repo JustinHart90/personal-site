@@ -8,9 +8,16 @@
     <title>Justin Hart's Personal Site</title>
     <link rel="stylesheet" href="vendor/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progressBar.css">
     <!-- <base href="/"> -->
   </head>
   <body>
+    <progress value="0"></progress>
+    <div class="progress-links">
+      <a href="#projects" class="btn btn-default first hide">PROJECTS</i></a>
+      <a href="#education" class="btn btn-default second hide">EDUCATION</a>
+      <a href="#experience" class="btn btn-default third hide">EXPERIENCE</a>
+    </div>
 
     <mark><img src="images/logo.png" alt="logo"></mark>
 
@@ -19,6 +26,8 @@
     <br><br><br>
     <br><br><br>
     <div id="message-block">
+      <p id="name">Justin Hart</p>
+      <p id="role">Full Stack Web Developer</p>
       <a href="#projects" id="message">the stuff to know is down below</a>
     </div>
     <nav class="navbar navbar-default">
@@ -159,5 +168,6 @@
 
   <!--  Scripts -->
   <script type="text/javascript" src="js/eventListeners.js"></script>
+  <script type="text/javascript" src="js/progressBar.js"></script>
   </body>
 </html>
