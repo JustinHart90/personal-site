@@ -64,7 +64,7 @@ $(document).ready(function() {
     //   $("div.nav-icons").addClass('flex-direction') :
     //   $("div.nav-icons").removeClass('flex-direction')
 
-    if (getValue() > 195) {
+    if (getValue() > 197) {
       $("#resume-label, #resume-container").addClass('hide')
       $("div.nav-icons").addClass('flex-direction')
     }
@@ -82,9 +82,10 @@ $(document).ready(function() {
     if (getValue() > education + 40) {
       $("div.progress-links a.experience-link").addClass('bold')
     }
-    if (getValue() === 0) {
+    if (getValue() < 197.5) {
       $("div.progress-links a").removeClass('bold')
       $("div.nav-icons").removeClass('flex-direction')
+      $("#resume-label, #resume-container").removeClass('hide')
       // $("#resume-label, #resume-container").removeClass('hide')
     }
   })

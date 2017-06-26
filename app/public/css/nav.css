@@ -52,8 +52,16 @@ div.reposition-nav {
 }
 
 div.nav-icons {
+  position: absolute;
+  right: 0;
+}
+
+div.nav-icons.flex-direction {
+  display: flex;
+  flex-direction: column-reverse;
   position: fixed;
   right: 0;
+  bottom: 0;
 }
 
 .flex-direction img.icon-block {
@@ -79,15 +87,8 @@ img.icon-block.blank {
   position: fixed;
   margin-top: 12.5px;
   margin-left: 10px;
+  position: absolute;
   /*z-index: 10002;*/
-}
-
-div.nav-icons.flex-direction {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 0;
-  bottom: 0;
 }
 
 a.navbar-brand img {
