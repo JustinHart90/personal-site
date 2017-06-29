@@ -16,7 +16,7 @@ nav.navbar.navbar-default {
 
 #name {
   position: absolute;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-family: 'Anonymous Pro', 'Poiret One', cursive, sans-serif;
   bottom: 185px;
   text-align: center;
@@ -30,14 +30,10 @@ nav.navbar.navbar-default {
 
 #role {
   position: absolute;
-  font-size: 1.25em;
+  font-size: 1.5em;
   bottom: 150px;
   color: rgb(175, 88, 89);
   text-align: center;
-  /*white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;*/
 }
 
 @keyframes typewriter{

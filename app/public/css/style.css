@@ -35,12 +35,20 @@ mark.parallax {
   background-size: cover;
 }
 
-mark.parallax, #role {
+mark.parallax {
   -webkit-animation: fadein 5s; /* Safari and Chrome */
   -moz-animation: fadein 5s; /* Firefox */
   -ms-animation: fadein 5s; /* Internet Explorer */
   -o-animation: fadein 5s; /* Opera */
   animation: fadein 5s;
+}
+
+#role {
+  -webkit-animation: fadein 10s; /* Safari and Chrome */
+  -moz-animation: fadein 10s; /* Firefox */
+  -ms-animation: fadein 10s; /* Internet Explorer */
+  -o-animation: fadein 10s; /* Opera */
+  animation: fadein 10s;
 }
 
 @keyframes fadein {
