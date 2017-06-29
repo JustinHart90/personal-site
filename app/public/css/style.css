@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Roboto', sans-serif, 'Lucida Grande', Helvetica, Arial;
 }
 
 a {
@@ -33,7 +33,9 @@ mark.parallax {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+mark.parallax, #role {
   -webkit-animation: fadein 5s; /* Safari and Chrome */
   -moz-animation: fadein 5s; /* Firefox */
   -ms-animation: fadein 5s; /* Internet Explorer */

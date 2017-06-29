@@ -16,18 +16,37 @@ nav.navbar.navbar-default {
 
 #name {
   position: absolute;
-  font-family: cursive;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  font-family: 'Anonymous Pro', 'Poiret One', cursive, sans-serif;
   bottom: 185px;
-  color: rgb(175, 88, 89)
+  text-align: center;
+  /*color: rgb(175, 88, 89);*/
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 #role {
   position: absolute;
-  font-family: cursive;
-  font-size: 1.5em;
+  font-size: 1.25em;
   bottom: 150px;
-  color: rgb(175, 88, 89)
+  color: rgb(175, 88, 89);
+  text-align: center;
+  /*white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;*/
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 
 #message {
@@ -88,7 +107,6 @@ img.icon-block.blank {
   margin-top: 12.5px;
   margin-left: 10px;
   position: absolute;
-  /*z-index: 10002;*/
 }
 
 a.navbar-brand img {
