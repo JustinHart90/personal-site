@@ -1,6 +1,9 @@
 body {
   padding: 50px;
   font: 14px 'Roboto', sans-serif, 'Lucida Grande', Helvetica, Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
@@ -15,27 +18,16 @@ section div.section-header {
 
 /* LOGO */
 
-mark img {
-  height: 200px;
-  width: auto;
+#jh-logo {
+  width: 35vw;
+  height: auto;
 }
 
-mark.parallax {
-  height: 500px;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /*background-image: url('images/logo.png');*/
-  background-color: transparent;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+div.parallax {
+  margin-bottom: 10%;
 }
 
-mark.parallax {
+div.parallax {
   -webkit-animation: fadein 5s; /* Safari and Chrome */
   -moz-animation: fadein 5s; /* Firefox */
   -ms-animation: fadein 5s; /* Internet Explorer */

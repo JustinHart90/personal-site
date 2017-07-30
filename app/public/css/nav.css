@@ -1,3 +1,11 @@
+#top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 nav.navbar.navbar-default {
   z-index: 100;
   margin-bottom: 0;
@@ -8,6 +16,7 @@ nav.navbar.navbar-default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 8.5vh;
 }
 
 #nav-text {
@@ -15,10 +24,8 @@ nav.navbar.navbar-default {
 }
 
 #name {
-  position: absolute;
-  font-size: 3.5em;
+  font-size: 3rem;
   font-family: 'Anonymous Pro', 'Poiret One', cursive, sans-serif;
-  bottom: 185px;
   text-align: center;
   /*color: rgb(175, 88, 89);*/
   white-space: nowrap;
@@ -29,9 +36,7 @@ nav.navbar.navbar-default {
 }
 
 #role {
-  position: absolute;
   font-size: 1.5em;
-  bottom: 150px;
   color: rgb(175, 88, 89);
   text-align: center;
 }
@@ -54,6 +59,7 @@ nav.navbar.navbar-default {
 div#message-block {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 div.reposition-nav {
@@ -80,28 +86,31 @@ div.nav-icons.flex-direction {
 }
 
 .flex-direction img.icon-block {
-  height: 40px;
+  height: 6vh;
   width: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.5vw;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 img.icon-block {
-  height: 40px;
+  height: 6vh;
   width: auto;
-  margin-right: 10px;
+  margin-right: 0.5vh;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 img.icon-block.blank {
   margin-right: -15px;
+  cursor: pointer;
 }
 
 #resume-label {
   color: rgb(105,162,215);
   position: fixed;
-  margin-top: 12.5px;
-  margin-left: 10px;
+  margin-top: 1.75vh;
+  margin-left: 0.5vh;
   position: absolute;
 }
 
