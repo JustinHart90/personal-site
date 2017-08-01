@@ -1,0 +1,54 @@
+div.flip.container-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  -webkit-perspective: 60vw;
+  -moz-perspective: 60vw;
+  -ms-perspective: 60vw;
+  -o-perspective: 60vw;
+  perspective: 60vw;
+}
+
+#card, #card2, #card3, #card4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: transform 0.75s;
+  -moz-transition: transform 0.75s;
+  -ms-transition: transform 0.75s;
+  -o-transition: transform 0.75s;
+  transition: transform 0.75s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#card figure, #card2 figure, #card3 figure, #card4 figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#card .front, #card2 .front, #card3 .front, #card4 .front {
+}
+
+#card .back, #card2 .back, #card3 .back, #card4 .back {
+  transform: rotateY( 180deg );
+}
+
+#card.flipped, #card2.flipped, #card3.flipped, #card4.flipped {
+  transform: rotateY( 180deg );
+}
