@@ -18,7 +18,8 @@ $(document).ready( () => {
 
   let windowHeight = $(window).height();
   let topSection = $("#top-section");
-  topSection.height(windowHeight);
+  let navHeight = $("nav.navbar.navbar-default").height();
+  topSection.height(windowHeight - navHeight);
 
   $(window).resize(() => {
     let mockHeight = $("#coin-mock").height();
@@ -27,7 +28,8 @@ $(document).ready( () => {
 
     let windowHeight = $(window).height();
     let topSection = $("#top-section");
-    topSection.height(windowHeight);
+    let navHeight = $("nav.navbar.navbar-default").height();
+    topSection.height(windowHeight - navHeight);
 });
 
   $(".flip-to-back").click(e => {
