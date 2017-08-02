@@ -129,6 +129,17 @@ section.education.row {
   padding-bottom: 10px;
 }
 
+div.flip.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+.col-lg-5 {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 @media (min-width: 420px) {
   .hide-when-small {
     display: none;
@@ -139,12 +150,8 @@ section.education.row {
     padding-bottom: 10px;
   }
   .mockup-img {
-    width: 65%;
+    width: 75%;
     height: auto;
-  }
-  div.flip.container-fluid {
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -154,5 +161,9 @@ section.education.row {
   }
   .show-when-small {
     display: none;
+  }
+  .mockup-img {
+    width: 85%;
+    height: auto;
   }
 }
