@@ -119,7 +119,7 @@ section.education.row {
   border-radius: 5px;
 }
 
-.hide-when-small {
+.hide-when-small, .col-lg-5.hide-when-small {
   display: none;
 }
 
