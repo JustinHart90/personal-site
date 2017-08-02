@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 0 50px 50px;
   font: 14px 'Roboto', sans-serif, 'Lucida Grande', Helvetica, Arial;
   display: flex;
   flex-direction: column;
@@ -141,7 +141,7 @@ div.flip.container-fluid {
 }
 
 @media (min-width: 420px) {
-  .hide-when-small {
+  .hide-when-small, .col-lg-5.hide-when-small {
     display: none;
   }
   .show-when-small {
@@ -156,7 +156,7 @@ div.flip.container-fluid {
 }
 
 @media (min-width: 1200px) {
-  .hide-when-small {
+  .hide-when-small, .col-lg-5.hide-when-small {
     display: block;
   }
   .show-when-small {
