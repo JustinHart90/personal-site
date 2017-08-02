@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/progressBar.css">
     <link rel="stylesheet" href="css/flip.css">
-    <!-- <base href="/"> -->
   </head>
   <body>
     <progress value="0"></progress>
@@ -29,7 +28,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="reposition-nav">
-            <a href='#projects'><img id='down-arrow' src='../images/down.png'></a>
+            <a href='#projects' class="hide-when-small"><img id='down-arrow' src='../images/down.png'></a>
             <div class="nav-icons">
               <span id="resume-label">Resume</span>
               <a class="right" id="resume-container" href="./resume.pdf" title="download resume" target="_blank"><img class="icon-block blank" src="images/blank.png" alt="resume"></a>
@@ -50,6 +49,16 @@
       </div>
       <hr>
       <div class="coinsight row">
+        <div class="col-lg-5 show-when-small">
+          <h2><span><img class="mockup-logo" src="images/coinsight.png" alt="logo"></span>coinsight</h2>
+          <br>
+          <h6>ES6, D3.js, AngularJS, Webpack, Babel, Service Workers, IBM Watson, Node.js, Express, PostgreSQL, Knex, HTML5, CSS3, Bootstrap</h6>
+          <br>
+          <p>A cryptocurrency dashboard, simplified. Coinsight is a Progressive Web Application that generates real time public sentiment analysis to provide insights into how the price of cryptocurrencies change according to public perception.</p>
+          <br>
+          <span><a href="https://thecoinsight.com">View Live</a></span>&nbsp;&nbsp;&nbsp;
+          <span><a href="http://github.com/justinhart90/coinsight">View Github</a></span>
+        </div>
         <div class="col-lg-7">
           <section class="container">
             <div id="card">
@@ -70,7 +79,7 @@
             </div>
           </section>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 hide-when-small">
           <h2><span><img class="mockup-logo" src="images/coinsight.png" alt="logo"></span>coinsight</h2>
           <br>
           <h6>ES6, D3.js, AngularJS, Webpack, Babel, Service Workers, IBM Watson, Node.js, Express, PostgreSQL, Knex, HTML5, CSS3, Bootstrap</h6>
@@ -122,6 +131,16 @@
       <br><br>
 
       <div class="shook row">
+        <div class="col-lg-5 show-when-small">
+          <h2><span><img class="mockup-logo" src="images/shook-icon-2.png" alt="logo"></span>SHOOK</h2>
+          <br>
+          <h6>Javascript, Node, Express, PostgreSQL, AWS, CSS, Bootstrap, Handlebars, HTML, Knex</h6>
+          <br>
+          <p>SHOOK is a social betting app that turns life's everyday events into bet-able moments and ensures neither party has a “conveniently” poor memory when the bet comes due. You can challenge friends directly on the website or on Twitter using #SHOOK and the Shook-bot will take care of the rest.</p>
+          <br>
+          <span><a href="http://yougotshook.com">View Live</a></span>&nbsp;&nbsp;&nbsp;
+          <span><a href="http://github.com/sixgun-bridal/shook">View Github</a></span>
+        </div>
         <div class="col-lg-7">
           <section class="container">
             <div id="card3">
@@ -142,7 +161,7 @@
             </div>
           </section>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 hide-when-small">
           <h2><span><img class="mockup-logo" src="images/shook-icon-2.png" alt="logo"></span>SHOOK</h2>
           <br>
           <h6>Javascript, Node, Express, PostgreSQL, AWS, CSS, Bootstrap, Handlebars, HTML, Knex</h6>

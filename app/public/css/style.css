@@ -118,3 +118,41 @@ section.education.row {
   margin-top: 50px;
   border-radius: 5px;
 }
+
+.hide-when-small {
+  display: none;
+}
+
+.show-when-small {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 420px) {
+  .hide-when-small {
+    display: none;
+  }
+  .show-when-small {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .mockup-img {
+    width: 65%;
+    height: auto;
+  }
+  div.flip.container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-when-small {
+    display: block;
+  }
+  .show-when-small {
+    display: none;
+  }
+}

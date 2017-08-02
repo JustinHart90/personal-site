@@ -16,6 +16,12 @@ $(document).ready( () => {
   $(".col-lg-7").height(mockHeight + 25);
   let newHeight = $(".col-lg-7").height();
 
+  $(window).resize(() => {
+    let mockHeight = $("#coin-mock").height();
+    $(".col-lg-7").height(mockHeight + 25);
+    let newHeight = $(".col-lg-7").height();
+});
+
   $(".flip-to-back").click(e => {
     e.preventDefault();
     $("#card").addClass("flipped");
