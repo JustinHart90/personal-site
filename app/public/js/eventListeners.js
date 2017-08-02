@@ -19,17 +19,43 @@ $(document).ready( () => {
   $(".flip-to-back").click(e => {
     e.preventDefault();
     $("#card").addClass("flipped");
+  })
+
+  $(".flip-to-back2").click(e => {
+    e.preventDefault();
     $("#card2").addClass("flipped");
+  })
+
+  $(".flip-to-back3").click(e => {
+    e.preventDefault();
     $("#card3").addClass("flipped");
+  })
+
+  $(".flip-to-back4").click(e => {
+    e.preventDefault();
     $("#card4").addClass("flipped");
   })
+
   $(".flip-to-front").click(e => {
     e.preventDefault();
     $("#card").removeClass("flipped");
+  })
+
+  $(".flip-to-front2").click(e => {
+    e.preventDefault();
     $("#card2").removeClass("flipped");
+  })
+
+  $(".flip-to-front3").click(e => {
+    e.preventDefault();
     $("#card3").removeClass("flipped");
+  })
+
+  $(".flip-to-front4").click(e => {
+    e.preventDefault();
     $("#card4").removeClass("flipped");
   })
+
 })
 
 function scrollTo(hash) {

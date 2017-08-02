@@ -20,11 +20,11 @@ section.container {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transition: transform 0.75s;
-  -moz-transition: transform 0.75s;
-  -ms-transition: transform 0.75s;
-  -o-transition: transform 0.75s;
-  transition: transform 0.75s;
+  -webkit-transition: transform 1.0s;
+  -moz-transition: transform 1.0s;
+  -ms-transition: transform 1.0s;
+  -o-transition: transform 1.0s;
+  transition: transform 1.0s;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
