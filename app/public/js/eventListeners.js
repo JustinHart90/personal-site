@@ -24,7 +24,7 @@ $(document).ready( () => {
     let topSection = $("#top-section");
     let navHeight = $("nav.navbar.navbar-default").height();
     topSection.height(windowHeight - navHeight);
-});
+  });
 
   $(".flip-to-back").click(e => {
     e.preventDefault();
