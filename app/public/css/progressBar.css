@@ -1,6 +1,6 @@
 progress {
   /* Positioning */
-  z-index: 1000;
+  z-index: 10;
   position: fixed;
   left: 0;
   top: 0;
@@ -33,41 +33,4 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
   background-color: rgb(175, 88, 89);
-}
-
-progress.showBorder {
-  border: 1px solid white;
-}
-
-div.progress-links {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 10001;
-  position: fixed;
-  left: 0;
-  top: 17px;
-}
-
-div.progress-links a {
-  /*margin-left: 40px;
-  font-family: sans-serif;*/
-  color: rgb(55, 90, 127)
-}
-
-div.progress-links a.projects-link {
-  left: 20%;
-}
-
-div.progress-links a.education-link {
-  left: 50%;
-}
-
-div.progress-links a.experience-link {
-  right: 0;
-}
-
-div.progress-links a.bold {
-  font-weight: bold;
 }

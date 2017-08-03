@@ -6,7 +6,6 @@
 }
 
 nav.navbar.navbar-default {
-  z-index: 100;
   margin-bottom: 0;
   position: absolute;
   bottom: 0;
@@ -114,13 +113,8 @@ img.icon-block {
   cursor: pointer;
 }
 
-a.navbar-brand img {
-  height: 150%;
-  width: auto;
-}
-
 #down-arrow {
-  height: 30px;
+  height: 25px;
   width: auto;
 }
 

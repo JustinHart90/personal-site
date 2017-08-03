@@ -1,31 +1,31 @@
 .tooltip, .arrow:after {
   background: rgb(175, 88, 89);
-  border: 5px solid rgb(175, 88, 89);
-  z-index: 10000;
+  border: 10px solid rgb(175, 88, 89);
+  z-index: 100000;
 }
 
 .tooltip {
   pointer-events: none;
   opacity: 0;
-  display: inline-block;
-  position: absolute;
+  /*display: inline-block;*/
+  /*position: absolute;*/
   padding: 20px 20px;
   color: rgb(175, 88, 89);
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   font: bold 14px "Helvetica Neue", Sans-Serif;
   font-stretch: condensed;
   text-decoration: none;
-  box-shadow: 0 0 7px rgb(175,88,89);
+  box-shadow: 0 0 10px rgb(175,88,89);
 }
 .arrow {
-  width: 70px;
-  height: 16px;
+  width: 100px;
+  height: 23px;
   position: absolute;
   left: 50%;
-  margin-left: -35px;
-  bottom: -16px;
+  margin-left: -50px;
+  bottom: -23px;
 }
 .arrow:after {
   content: "";
@@ -47,7 +47,7 @@
 }
 .tooltip.active {
   opacity: 1;
-  margin-top: 15px;
+  margin-top: 30px;
   -webkit-transition: all 0.2s ease;
   -moz-transition:    all 0.2s ease;
   -ms-transition:     all 0.2s ease;
