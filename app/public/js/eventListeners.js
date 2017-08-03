@@ -1,12 +1,4 @@
 $(document).ready( () => {
-  $("#nav-text").mouseover(() => {
-    let arrow = $("<img id='down-arrow' src='../images/down.png'>");
-    $("#nav-text").html(arrow);
-    $("#nav-text").mouseleave(() => {
-      $("#nav-text").html();
-      $("#nav-text").text("the stuff to know is down below");
-    })
-  })
   $("#nav-link").click(e => {
     e.preventDefault();
     scrollTo("#nav-link");
@@ -20,6 +12,8 @@ $(document).ready( () => {
   let topSection = $("#top-section");
   let navHeight = $("nav.navbar.navbar-default").height();
   topSection.height(windowHeight - navHeight);
+
+  let iconHeight = $("img.icon-block").height();
 
   $(window).resize(() => {
     let mockHeight = $("#coin-mock").height();
@@ -75,5 +69,5 @@ $(document).ready( () => {
 })
 
 function scrollTo(hash) {
-    location.hash = "#" + hash;
+  location.hash = "#" + hash;
 }

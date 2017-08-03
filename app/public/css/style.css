@@ -141,6 +141,14 @@ div.flip.container-fluid {
 }
 
 @media (min-width: 420px) {
+  .flex-direction img.icon-block {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  img.icon-block {
+    height: 40px;
+    margin-right: 10px;
+  }
   .hide-when-small, .col-lg-5.hide-when-small {
     display: none;
   }
@@ -156,6 +164,16 @@ div.flip.container-fluid {
 }
 
 @media (min-width: 1200px) {
+  .flex-direction img.icon-block {
+    height: 40px !important;
+    width: auto !important;
+    margin-bottom: 7.5px;
+  }
+  img.icon-block {
+    height: 40px !important;
+    width: auto !important;
+    margin-right: 7.5px;
+  }
   .hide-when-small, .col-lg-5.hide-when-small {
     display: block;
   }

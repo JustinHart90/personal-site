@@ -47,15 +47,6 @@ $(document).ready(function() {
       $("#resume-label, #resume-container").addClass('hide')
       $("div.nav-icons").addClass('flex-direction')
     }
-    if (getValue() > projects - 40) {
-      $("div.progress-links a.projects-link").addClass('bold')
-    }
-    if (getValue() > education - 40) {
-      $("div.progress-links a.education-link").addClass('bold')
-    }
-    if (getValue() > education + 40) {
-      $("div.progress-links a.experience-link").addClass('bold')
-    }
     if (getValue() < 197.5) {
       $("div.progress-links a").removeClass('bold')
       $("div.nav-icons").removeClass('flex-direction')

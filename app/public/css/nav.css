@@ -85,17 +85,17 @@ div.nav-icons.flex-direction {
 }
 
 .flex-direction img.icon-block {
-  height: 6vh;
+  height: 30px;
   width: auto;
-  margin-bottom: 0.5vw;
+  margin-bottom: 5px;
   border-radius: 6px;
   cursor: pointer;
 }
 
 img.icon-block {
-  height: 6vh;
+  height: 30px;
   width: auto;
-  margin-right: 0.5vh;
+  margin-right: 5px;
   border-radius: 6px;
   cursor: pointer;
 }
