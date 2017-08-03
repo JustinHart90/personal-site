@@ -45,11 +45,11 @@ $(document).ready(function() {
   $(document).scroll( () => {
     if (getValue() > 197) {
       $("#resume-label, #resume-container").addClass('hide')
-      $("div.nav-icons").addClass('flex-direction')
+      $("ul.nav-icons.grid.effect-8").addClass('flex-direction')
     }
     if (getValue() < 197.5) {
       $("div.progress-links a").removeClass('bold')
-      $("div.nav-icons").removeClass('flex-direction')
+      $("ul.nav-icons.grid.effect-8").removeClass('flex-direction')
       $("#resume-label, #resume-container").removeClass('hide')
     }
   })
