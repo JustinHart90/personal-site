@@ -79,6 +79,10 @@ section.projects  div img {
   bottom: -100px;
 }
 
+#projects {
+  padding-top: 5rem;
+}
+
 img.flip-icon {
   height: 27.5px;
   width: auto;
