@@ -72,12 +72,12 @@ div.parallax {
     to   { opacity: 1; }
 }​
 
+.row {
+  min-height: 550px;
+}
+
 /* PROJECTS */
 
-section.projects  div img {
-  position: absolute;
-  bottom: -100px;
-}
 
 #projects {
   padding-top: 5rem;
@@ -90,9 +90,10 @@ img.flip-icon {
 
 .mockup-img {
   width: 85%;
-  max-width: 700px;
+  max-width: 600px;
   height: auto;
   margin: 2.5%;
+  margin-bottom: 5%;
   border-radius: 4px;
 }
 
@@ -117,7 +118,7 @@ section.education.row {
 }
 
 .education-logos {
-  height: 100px;
+  height: 80px;
   width: auto;
   margin-bottom: 20px;
   margin-top: 50px;
