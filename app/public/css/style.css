@@ -90,6 +90,7 @@ img.flip-icon {
 
 .mockup-img {
   width: 85%;
+  max-width: 700px;
   height: auto;
   margin: 2.5%;
   border-radius: 4px;
