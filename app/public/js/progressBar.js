@@ -41,16 +41,4 @@ $(document).ready(function() {
   var projects = $("#projects").offset().top;
   var education = $("#education").offset().top;
   var experience = $("#experience").offset().top;
-
-  $(document).scroll( () => {
-    if (getValue() > 197) {
-      $("#resume-label, #resume-container").addClass('hide')
-      $("ul.nav-icons.grid.effect-8").addClass('flex-direction')
-    }
-    if (getValue() < 197.5) {
-      $("div.progress-links a").removeClass('bold')
-      $("ul.nav-icons.grid.effect-8").removeClass('flex-direction')
-      $("#resume-label, #resume-container").removeClass('hide')
-    }
-  })
 });
